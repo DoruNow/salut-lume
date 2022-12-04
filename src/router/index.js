@@ -4,6 +4,10 @@ import fOC from '@/grupe/friendsOfCode/routerSettings.js'
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path: '/',
+    component: () => import('@/views/HomePage.vue'),
+  },
   fOC.routerCfg,
 ]
 
