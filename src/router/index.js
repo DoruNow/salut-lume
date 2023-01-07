@@ -8,6 +8,10 @@ const routes = [
     path: '/',
     component: () => import('@/views/HomePage.vue'),
   },
+  {
+    path: '/date',
+    component: () => import('@/views/DatePage.vue'),
+  },
   fOC.routerCfg,
 ]
 
