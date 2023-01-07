@@ -12,7 +12,7 @@ const routes = [
     path: '/date',
     component: () => import('@/views/DatePage.vue'),
   },
-  fOC.routerCfg,
+  fOC.routerDefaultConfig,
 ]
 
 const router = new VueRouter({
