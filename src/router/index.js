@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import fOC from '@/grupe/friendsOfCode/routerSettings.js'
 Vue.use(VueRouter)
 
 const routes = [
@@ -9,10 +8,13 @@ const routes = [
     component: () => import('@/views/HomePage.vue'),
   },
   {
-    path: '/date',
-    component: () => import('@/views/DatePage.vue'),
+    path: '/demopoc',
+    component: () => import('@/views/Demo.vue'),
   },
-  fOC.routerDefaultConfig,
+  {
+    path: '/demo',
+    component: () => import('@/views/DemoPub.vue'),
+  },
 ]
 
 const router = new VueRouter({
