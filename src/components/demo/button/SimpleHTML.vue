@@ -1,7 +1,7 @@
 <template>
-  <v-card class="cardClass">
+  <v-card :class="cardClass">
     <v-card-text class="demo-card-text">
-      <button>Basic HTML button</button>
+      <input type="button" value="Basic HTML button" />
     </v-card-text>
     <v-card-text>
       <v-row>
@@ -9,7 +9,7 @@
           <CodeEditor
             :languages="[['HTML', 'HTML']]"
             :read_only="true"
-            value="<button>Basic HTML button</button>"
+            :value="valueHTML"
             class="codeEditor"
           />
         </v-col>
@@ -24,12 +24,17 @@ export default {
   components: {
     CodeEditor,
   },
+  data() {
+    return {
+      valueHTML: `<input type="button" value="Basic HTML button">`,
+    };
+  },
   computed: {
     demoItem() {
       return `d-flex flex-column align-center justify-center demo-card-text`;
     },
     cardClass() {
-      return `d-flex flex-column align-center justify-space-around elevation-10`;
+      return `ma-4 elevation-10`;
     },
   },
 };

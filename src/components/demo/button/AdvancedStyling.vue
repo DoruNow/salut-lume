@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card class="cardClass">
+    <v-card :class="cardClass">
       <v-card-text :class="demoItem">
         <button id="coolButton">I'm better</button>
       </v-card-text>
@@ -53,7 +53,7 @@ export default {
       return `d-flex flex-column align-center justify-center demo-card-text`;
     },
     cardClass() {
-      return `d-flex flex-column align-center justify-space-around elevation-10`;
+      return `ma-4 elevation-10`;
     },
     demoItemCode() {
       return "";
