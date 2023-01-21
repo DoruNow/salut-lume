@@ -45,7 +45,13 @@
       "parser": "@babel/eslint-parser"
     },
     "rules": {
-      "vue/multi-word-component-names": "off"
+      "vue/multi-word-component-names": "off",
+      "vue/max-len": [
+        "error",
+        {
+          "code": 280
+        }
+      ]
     }
   },
   "browserslist": [
