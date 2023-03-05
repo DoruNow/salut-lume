@@ -11,12 +11,7 @@
       <v-card-text>
         <v-row>
           <v-col cols="12" sm="12" class="d-flex justify-center">
-            <CodeEditor
-              :languages="[['html', 'HTML']]"
-              :read_only="true"
-              :value="valueOne"
-              class="codeEditor"
-            />
+            <CodeEditor :languages="[['html', 'HTML']]" :read_only="true" :value="valueOne" class="codeEditor" />
           </v-col>
         </v-row>
       </v-card-text>
@@ -34,12 +29,7 @@
       <v-card-text>
         <v-row>
           <v-col cols="12" sm="12" class="d-flex justify-center">
-            <CodeEditor
-              :languages="[['html', 'HTML']]"
-              :read_only="true"
-              :value="valueTwo"
-              class="codeEditor"
-            />
+            <CodeEditor :languages="[['html', 'HTML']]" :read_only="true" :value="valueTwo" class="codeEditor" />
           </v-col>
         </v-row>
       </v-card-text>
@@ -52,20 +42,10 @@
       <v-card-text>
         <v-row>
           <v-col cols="12" sm="6" class="d-flex justify-center">
-            <CodeEditor
-              :languages="[['html', 'HTML']]"
-              :read_only="true"
-              :value="valueThree"
-              class="codeEditor"
-            />
+            <CodeEditor :languages="[['html', 'HTML']]" :read_only="true" :value="valueThree" class="codeEditor" />
           </v-col>
           <v-col cols="12" sm="6" class="d-flex justify-center">
-            <CodeEditor
-              :languages="[['js', 'JavaScript']]"
-              :read_only="true"
-              :value="valueJSOne"
-              class="codeEditor"
-            />
+            <CodeEditor :languages="[['js', 'JavaScript']]" :read_only="true" :value="valueJSOne" class="codeEditor" />
           </v-col>
         </v-row>
       </v-card-text>
@@ -99,7 +79,7 @@ export default {
       return `d-flex align-center justify-space-around demo-card-text`;
     },
     cardClass() {
-      return `ma-4 elevation-10`;
+      return `ma-4 elevation-6`;
     },
   },
   methods: {

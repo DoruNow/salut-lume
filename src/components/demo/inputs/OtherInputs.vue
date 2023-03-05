@@ -62,7 +62,7 @@ export default {
       return `d-flex flex-column align-center justify-center demo-card-text`;
     },
     cardClass() {
-      return `ma-4 elevation-10`;
+      return `ma-4 elevation-6`;
     },
   },
 };

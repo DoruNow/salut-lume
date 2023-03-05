@@ -12,19 +12,12 @@
         <p><b>This text is bold</b></p>
         <p><i>This text is italic</i></p>
         <p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
-        <a href="https://www.google.com/" target="_blank"
-          >I am a link to Google</a
-        >
+        <a href="https://www.google.com/" target="_blank">I am a link to Google</a>
       </v-card-text>
       <v-card-text>
         <v-row>
           <v-col cols="12" sm="12" class="d-flex justify-center">
-            <CodeEditor
-              :languages="[['HTML', 'HTML']]"
-              :read_only="true"
-              :value="valueHTMLOne"
-              class="codeEditor"
-            />
+            <CodeEditor :languages="[['HTML', 'HTML']]" :read_only="true" :value="valueHTMLOne" class="codeEditor" />
           </v-col>
         </v-row>
       </v-card-text>
@@ -58,7 +51,7 @@ export default {
       return `d-flex flex-column align-center justify-center demo-card-text`;
     },
     cardClass() {
-      return `ma-4 elevation-10`;
+      return `ma-4 elevation-6`;
     },
   },
 };

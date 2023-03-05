@@ -6,55 +6,25 @@
       <v-spacer></v-spacer>
     </v-app-bar>
     <v-app>
-      <v-navigation-drawer
-        v-model="drawer"
-        app
-        class="d-flex justify-center align-center"
-        color="grey lighten-3"
-        mini-variant
-      >
-        <div
-          class="pt-4 d-flex flex-column justify-space-around"
-          style="height: 100%"
-        >
-          <v-btn
-            small
-            elevation="0"
-            color="white"
-            @click="selected = 0"
-            fab
-            class="my-1"
-          >
+      <v-navigation-drawer v-model="drawer" app class="d-flex justify-center align-center" color="grey lighten-3" mini-variant>
+        <div class="pt-4 d-flex flex-column justify-space-around" style="height: 100%">
+          <v-btn small elevation="0" color="white" @click="selected = 0" fab class="my-1">
             <v-icon color="info"> mdi-format-text </v-icon>
           </v-btn>
-          <v-btn
-            small
-            elevation="0"
-            color="white"
-            @click="selected = 1"
-            fab
-            class="my-1 pointer-icon"
-          >
+          <v-btn small elevation="0" color="white" @click="selected = 1" fab class="my-1 pointer-icon">
             <v-icon color="info"> mdi-button-pointer </v-icon>
           </v-btn>
-          <v-btn
-            small
-            elevation="0"
-            color="white"
-            @click="selected = 2"
-            fab
-            class="my-1"
-          >
+          <v-btn small elevation="0" color="white" @click="selected = 2" fab class="my-1">
             <v-icon color="info"> mdi-account-check </v-icon>
+          </v-btn>
+          <v-btn small elevation="0" color="white" @click="selected = 3" fab class="my-1">
+            <v-icon color="info"> mdi-language-javascript </v-icon>
           </v-btn>
         </div>
       </v-navigation-drawer>
 
       <v-main class="d-flex align-center px-0">
-        <component
-          :is="tabs[selected].tabComponent"
-          class="my-4 mx-14 elevation-18"
-        />
+        <component :is="tabs[selected].tabComponent" class="my-4 mx-14 elevation-4" />
       </v-main>
     </v-app>
   </div>
@@ -64,16 +34,18 @@
 import DemoButton from "@/components/demo/components/DemoButton.vue";
 import DemoText from "@/components/demo/components/DemoText.vue";
 import DemoInputs from "@/components/demo/components/DemoInputs.vue";
+import DemoJS from "@/components/demo/components/DemoJS.vue";
 
 export default {
   components: {
     DemoButton,
     DemoText,
     DemoInputs,
+    DemoJS,
   },
   data() {
     return {
-      selected: 2,
+      selected: 3,
       drawer: true,
       menu: [{ name: "", icon: "mdi-home" }],
       tabs: [
@@ -88,6 +60,10 @@ export default {
         {
           tabName: "Buttons",
           tabComponent: DemoInputs,
+        },
+        {
+          tabName: "Javascript",
+          tabComponent: DemoJS,
         },
       ],
     };

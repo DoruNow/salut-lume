@@ -1,6 +1,6 @@
 <template>
   <v-card>
-    <v-tabs v-model="tab" fixed-tabs elevation="10">
+    <v-tabs v-model="tab" fixed-tabs elevation="6">
       <v-tab dark>Simple HTML</v-tab>
       <v-tab dark>Positioning a Button</v-tab>
       <v-tab dark>better css</v-tab>

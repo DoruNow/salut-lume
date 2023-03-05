@@ -9,20 +9,10 @@
       <v-card-text>
         <v-row>
           <v-col cols="12" sm="6" class="d-flex justify-center">
-            <CodeEditor
-              :languages="[['HTML', 'HTML']]"
-              :read_only="true"
-              :value="valueHTMLOne"
-              class="codeEditor"
-            />
+            <CodeEditor :languages="[['HTML', 'HTML']]" :read_only="true" :value="valueHTMLOne" class="codeEditor" />
           </v-col>
           <v-col cols="12" sm="6" class="d-flex justify-center">
-            <CodeEditor
-              :languages="[['CSS', 'CSS']]"
-              :read_only="true"
-              :value="valueCSSOne"
-              class="codeEditor"
-            />
+            <CodeEditor :languages="[['CSS', 'CSS']]" :read_only="true" :value="valueCSSOne" class="codeEditor" />
           </v-col>
         </v-row>
       </v-card-text>
@@ -38,20 +28,10 @@
       <v-card-text>
         <v-row>
           <v-col cols="12" sm="6" class="d-flex justify-center">
-            <CodeEditor
-              :languages="[['HTML', 'HTML']]"
-              :read_only="true"
-              :value="valueHTMLTwo"
-              class="codeEditor"
-            />
+            <CodeEditor :languages="[['HTML', 'HTML']]" :read_only="true" :value="valueHTMLTwo" class="codeEditor" />
           </v-col>
           <v-col cols="12" sm="6" class="d-flex justify-center">
-            <CodeEditor
-              :languages="[['CSS', 'CSS']]"
-              :read_only="true"
-              :value="valueCSSTwo"
-              class="codeEditor"
-            />
+            <CodeEditor :languages="[['CSS', 'CSS']]" :read_only="true" :value="valueCSSTwo" class="codeEditor" />
           </v-col>
         </v-row>
       </v-card-text>
@@ -66,20 +46,10 @@
       <v-card-text>
         <v-row>
           <v-col cols="12" sm="6" class="d-flex justify-center">
-            <CodeEditor
-              :languages="[['HTML', 'HTML']]"
-              :read_only="true"
-              :value="valueHTMLThree"
-              class="codeEditor"
-            />
+            <CodeEditor :languages="[['HTML', 'HTML']]" :read_only="true" :value="valueHTMLThree" class="codeEditor" />
           </v-col>
           <v-col cols="12" sm="6" class="d-flex justify-center">
-            <CodeEditor
-              :languages="[['CSS', 'CSS']]"
-              :read_only="true"
-              :value="valueCSSThree"
-              class="codeEditor"
-            />
+            <CodeEditor :languages="[['CSS', 'CSS']]" :read_only="true" :value="valueCSSThree" class="codeEditor" />
           </v-col>
         </v-row>
       </v-card-text>
@@ -94,20 +64,10 @@
       <v-card-text>
         <v-row>
           <v-col cols="12" sm="6" class="d-flex justify-center">
-            <CodeEditor
-              :languages="[['HTML', 'HTML']]"
-              :read_only="true"
-              :value="valueHTMLFour"
-              class="codeEditor"
-            />
+            <CodeEditor :languages="[['HTML', 'HTML']]" :read_only="true" :value="valueHTMLFour" class="codeEditor" />
           </v-col>
           <v-col cols="12" sm="6" class="d-flex justify-center">
-            <CodeEditor
-              :languages="[['CSS', 'CSS']]"
-              :read_only="true"
-              :value="valueCSSFour"
-              class="codeEditor"
-            />
+            <CodeEditor :languages="[['CSS', 'CSS']]" :read_only="true" :value="valueCSSFour" class="codeEditor" />
           </v-col>
         </v-row>
       </v-card-text>
@@ -122,20 +82,10 @@
       <v-card-text>
         <v-row>
           <v-col cols="12" sm="6" class="d-flex justify-center">
-            <CodeEditor
-              :languages="[['HTML', 'HTML']]"
-              :read_only="true"
-              :value="valueHTMLFive"
-              class="codeEditor"
-            />
+            <CodeEditor :languages="[['HTML', 'HTML']]" :read_only="true" :value="valueHTMLFive" class="codeEditor" />
           </v-col>
           <v-col cols="12" sm="6" class="d-flex justify-center">
-            <CodeEditor
-              :languages="[['CSS', 'CSS']]"
-              :read_only="true"
-              :value="valueCSSFive"
-              class="codeEditor"
-            />
+            <CodeEditor :languages="[['CSS', 'CSS']]" :read_only="true" :value="valueCSSFive" class="codeEditor" />
           </v-col>
         </v-row>
       </v-card-text>
@@ -238,7 +188,7 @@ export default {
       return `d-flex flex-column align-center justify-center demo-card-text`;
     },
     cardClass() {
-      return `ma-4 elevation-10`;
+      return `ma-4 elevation-6`;
     },
   },
 };

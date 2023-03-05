@@ -1,6 +1,6 @@
 <template>
   <v-card>
-    <v-tabs v-model="tab" fixed-tabs elevation="10">
+    <v-tabs v-model="tab" fixed-tabs elevation="6">
       <v-tab dark>Simple Text</v-tab>
       <v-tab dark>Modern Text</v-tab>
     </v-tabs>

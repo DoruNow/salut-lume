@@ -6,12 +6,7 @@
     <v-card-text>
       <v-row>
         <v-col cols="12" sm="12" class="d-flex justify-center">
-          <CodeEditor
-            :languages="[['HTML', 'HTML']]"
-            :read_only="true"
-            :value="valueHTML"
-            class="codeEditor"
-          />
+          <CodeEditor :languages="[['HTML', 'HTML']]" :read_only="true" :value="valueHTML" class="codeEditor" />
         </v-col>
       </v-row>
     </v-card-text>
@@ -34,7 +29,7 @@ export default {
       return `d-flex flex-column align-center justify-center demo-card-text`;
     },
     cardClass() {
-      return `ma-4 elevation-10`;
+      return `ma-4 elevation-6`;
     },
   },
 };

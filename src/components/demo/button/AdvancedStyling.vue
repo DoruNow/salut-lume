@@ -7,19 +7,9 @@
       <v-card-text :class="demoItemCode">
         <v-row>
           <v-col cols="12" sm="6" class="d-flex justify-center">
-            <CodeEditor
-              :languages="[['HTML', 'HTML']]"
-              :read_only="true"
-              :value="coolButton"
-              class="codeEditor"
-            />
+            <CodeEditor :languages="[['HTML', 'HTML']]" :read_only="true" :value="coolButton" class="codeEditor" />
           </v-col>
-          <v-col cols="12" sm="6" class="d-flex justify-center">
-            <CodeEditor
-              :languages="[['css', 'CSS']]"
-              :read_only="true"
-              :value="coolButtonCss"
-          /></v-col>
+          <v-col cols="12" sm="6" class="d-flex justify-center"> <CodeEditor :languages="[['css', 'CSS']]" :read_only="true" :value="coolButtonCss" /></v-col>
         </v-row>
       </v-card-text>
     </v-card>
@@ -53,7 +43,7 @@ export default {
       return `d-flex flex-column align-center justify-center demo-card-text`;
     },
     cardClass() {
-      return `ma-4 elevation-10`;
+      return `ma-4 elevation-6`;
     },
     demoItemCode() {
       return "";

@@ -1,36 +1,22 @@
 <template>
   <v-card>
     <v-tabs v-model="tab" fixed-tabs elevation="6">
-      <v-tab dark>Basic Inputs</v-tab>
-      <v-tab dark>Modern Text Inputs</v-tab>
-      <v-tab dark>Other Inputs</v-tab>
+      <v-tab dark>Vanilla JS</v-tab>
     </v-tabs>
 
     <v-tabs-items v-model="tab">
       <v-tab-item>
-        <BasicInputs />
-      </v-tab-item>
-
-      <v-tab-item>
-        <ModernInputs />
-      </v-tab-item>
-
-      <v-tab-item>
-        <OtherInputs />
+        <VanillaJS />
       </v-tab-item>
     </v-tabs-items>
   </v-card>
 </template>
 <script>
-import BasicInputs from "../inputs/BasicInputs.vue";
-import ModernInputs from "../inputs/ModernInputs.vue";
-import OtherInputs from "../inputs/OtherInputs.vue";
+import VanillaJS from "../javascript/VanillaJS.vue";
 
 export default {
   components: {
-    BasicInputs,
-    ModernInputs,
-    OtherInputs,
+    VanillaJS,
   },
   data() {
     return {
